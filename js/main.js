@@ -24,7 +24,7 @@ input.addEventListener("change", () => {
   }
   else {
     // selectedId 'ye menu elemalarını dön ve seçili kategoriye sahip elemanları al
-    const filtered = data.filter((item) => item.category == selected);
+    const filtered = data.filter((item) => item.category === selected);
     // filtrelenen elemanları render etmek
 
     renderCard(filtered);
